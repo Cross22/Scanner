@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhE-dL-nMv">
+                                <rect key="frame" x="484" y="20" width="167" height="280"/>
+                                <color key="backgroundColor" red="1" green="0.952121860793671" blue="0.88154801978925912" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYi-Rg-yta">
+                                <rect key="frame" x="16" y="20" width="468" height="355"/>
+                                <color key="backgroundColor" red="0.73370030841642153" green="1" blue="0.69579283769474054" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="$ 255.00" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="f7q-xb-He2" userLabel="Total">
+                                <rect key="frame" x="484" y="300" width="167" height="75"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dhE-dL-nMv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="4xP-af-Odc"/>
+                            <constraint firstItem="dhE-dL-nMv" firstAttribute="bottomMargin" secondItem="2fi-mo-0CV" secondAttribute="bottom" id="6Oa-xj-8oH"/>
+                            <constraint firstItem="f7q-xb-He2" firstAttribute="top" secondItem="dhE-dL-nMv" secondAttribute="bottom" id="9ad-Uj-KfK"/>
+                            <constraint firstItem="f7q-xb-He2" firstAttribute="centerX" secondItem="dhE-dL-nMv" secondAttribute="centerX" id="CgX-zZ-Ddx"/>
+                            <constraint firstItem="dhE-dL-nMv" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Fdb-K4-mop"/>
+                            <constraint firstItem="dhE-dL-nMv" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.25" id="IPK-Ei-m4R"/>
+                            <constraint firstItem="f7q-xb-He2" firstAttribute="width" secondItem="dhE-dL-nMv" secondAttribute="width" id="JA6-aF-pro"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="f7q-xb-He2" secondAttribute="bottom" id="NJn-Gy-n3c"/>
+                            <constraint firstItem="gYi-Rg-yta" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="UZw-th-BiW"/>
+                            <constraint firstItem="gYi-Rg-yta" firstAttribute="trailing" secondItem="dhE-dL-nMv" secondAttribute="leading" id="cNY-07-Q9u"/>
+                            <constraint firstItem="f7q-xb-He2" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.2" id="cWs-a6-TWA"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gYi-Rg-yta" secondAttribute="bottom" id="f76-r3-vbK"/>
+                            <constraint firstItem="gYi-Rg-yta" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="roY-Fp-Fzg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6Oa-xj-8oH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="preview" destination="gYi-Rg-yta" id="gKI-dB-0XQ"/>
+                        <outlet property="textView" destination="dhE-dL-nMv" id="Adt-n3-Q2p"/>
+                        <outlet property="totalView" destination="f7q-xb-He2" id="4dd-lp-rW1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
